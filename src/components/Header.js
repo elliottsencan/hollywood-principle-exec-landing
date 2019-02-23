@@ -10,7 +10,7 @@ const Header = (props) => (
             <div className="inner">
                 <h1>Exec</h1>
                 <p>A digital record executive to help maximize your releases<br />
-                by <a href="https://records.hollywoodprinciple.com">Hollywood Principle Records</a></p>
+                by <a href="https://www.hollywoodprinciple.com">Hollywood Principle Records</a></p>
             </div>
         </div>
         <nav>
