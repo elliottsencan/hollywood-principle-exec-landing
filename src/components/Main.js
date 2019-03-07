@@ -39,33 +39,22 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="contact" className={`active ${this.props.articleTimeout ? 'timeout' : ''}`}>
           <h2 className="major">Contact</h2>
-          <form action="https://hollywoodprinciple.us9.list-manage.com/subscribe/post?u=61143e36dd2b444f1dd45ad6b&amp;id=55c9d07ae7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div className="field half first">
-              <label htmlFor="mce-NAME">Name</label>
-              <input type="text"  name="NAME" class="" id="mce-NAME" />
-          </div>
-          <div className="field half">
+          <form action="https://hollywoodprinciple.us9.list-manage.com/subscribe/post?u=61143e36dd2b444f1dd45ad6b&amp;id=55c9d07ae7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+          <div className="field">
               <label htmlFor="mce-EMAIL">Email</label>
-              <input type="email"  name="EMAIL" class="required email" id="mce-EMAIL"/>
+              <input type="email"  name="EMAIL" className="required email" id="mce-EMAIL"/>
           </div>
           <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea rows="6"  name="MESSAGE" class="required" id="mce-MESSAGE"></textarea>
+              <textarea rows="6"  name="MESSAGE" className="required" id="mce-MESSAGE"></textarea>
           </div>
           <ul className="actions">
               <li><input type="submit" value="Send Message" className="special" /></li>
               <li><input type="reset" value="Clear" /></li>
           </ul>
       </form>
-          <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
-          </ul>
-          {close}
         </article>
 
       </div>

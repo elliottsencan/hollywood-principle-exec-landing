@@ -46,6 +46,15 @@ const Layout = ({ children, location }) => {
             ]}
           >
             <html lang="en" />
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135789446-1"></script>
+              <script>
+                {`window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-135789446-1');`}
+              </script>
+              <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:800" rel="stylesheet"></link>
           </Helmet>
           {content}
         </>
